@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/main.js"></script>
+    <title>Entrainement js</title>
+</head>
+<body>
+   <div class="mb-5" id="zone1">
+    <div class="bg-white d-flex justify-content-between p-2"><h1 class="text-black py-0 my-0">Galerie</h1>
+    <select id="filtre" onchange="majInterface(this.value)">
+        <option value="">Tout afficher</option>
+        <option value="Animaux">Animaux</option>
+        <option value="Paysages">Paysages</option>
+        <option value="Personnes">Personnes</option>
+    </select></div>
+    <div class="selection">
+        <img class="position-absolute z-1" width="100%" height="600px" src="./img/animal1.jpg" id="affiche" alt="">
+        <div class="position-absolute z-2 information d-flex flex-column  justify-content-center">
+            <div>
+                <h3>Nom</h3>
+                <p id="nom" class="p-0">Animal1</p>
+            </div>
+            <div>
+                <h3>Catégorie</h3>
+                <p id="categorie" class="p-0">Animeaux</p>
+            </div>
+            <div>
+                <h3>Prix</h3>
+                <p id="prix" class="p-0">200€</p>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4 p-5 justify-content-center mx-0" id="zone2"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+}
+#zone2{
+    margin-top: 550px;
+}
+.affiche{
+    animation: opac 0.5s linear;
+}
+.information{
+    height: 600px;
+    right: 0;
+    padding: 200px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.332);
+}
+.selection div{
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.selection h3{
+    font-size: 1.5rem;
+}
+.selection{
+    background: url(./img/animal1.jpg) center/cover ;
+}
+.vignette{
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+.vignette img{
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.vignette figcaption{
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+@keyframes opac{
+    from{opacity:0}
+    to{opacity:1}
+}
