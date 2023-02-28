@@ -10,14 +10,15 @@
     <title>Entrainement js</title>
 </head>
 <body>
-   <div class="mb-5" id="zone1">
-    <div class="bg-white d-flex justify-content-between p-2"><h1 class="text-black py-0 my-0">Galerie</h1>
-    <select id="filtre" onchange="majInterface(this.value)">
-        <option value="">Tout afficher</option>
-        <option value="Animaux">Animaux</option>
-        <option value="Paysages">Paysages</option>
-        <option value="Personnes">Personnes</option>
-    </select></div>
+<div class="mb-5" id="zone1">
+        <div class="bg-white d-flex justify-content-between p-2"><h1 class="text-black py-0 my-0">Galerie</h1>
+            <select id="filtre" onchange="majInterface(this.value)">
+                <option value="">Tout afficher</option>
+                <option value="Animaux">Animaux</option>
+                <option value="Paysages">Paysages</option>
+                <option value="Personnes">Personnes</option>
+            </select>
+        </div>
     <div class="selection">
         <img class="position-absolute z-1" width="100%" height="600px" src="./img/animal1.jpg" id="affiche" alt="">
         <div class="position-absolute z-2 information d-flex flex-column  justify-content-center">
@@ -35,7 +36,7 @@
             </div>
         </div>
     </div>
-   </div>
-   <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4 p-5 justify-content-center mx-0" id="zone2"></div>
+</div>
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4 p-5 justify-content-center mx-0" id="zone2"></div>
 </body>
 </html>
